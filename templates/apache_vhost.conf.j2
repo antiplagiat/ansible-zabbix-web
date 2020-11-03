@@ -59,6 +59,7 @@
   php_value post_max_size {{ zabbix_web_post_max_size | default('16M') }}
   php_value upload_max_filesize {{ zabbix_web_upload_max_filesize | default('2M') }}
   php_value max_input_time {{ zabbix_web_max_input_time | default('300') }}
+  {% endif %}
   # Set correct timezone.
   php_value date.timezone {{ zabbix_timezone }}
 {% endif %}
@@ -142,6 +143,7 @@ SSLCryptoDevice {{ zabbix_apache_SSLCryptoDevice }}
   php_value post_max_size {{ zabbix_web_post_max_size | default('16M') }}
   php_value upload_max_filesize {{ zabbix_web_upload_max_filesize | default('2M') }}
   php_value max_input_time {{ zabbix_web_max_input_time | default('300') }}
+  {% endif %}
   # Set correct timezone.
   php_value date.timezone {{ zabbix_timezone }}
 {% endif %}
